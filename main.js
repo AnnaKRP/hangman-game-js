@@ -22,12 +22,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // body parts array with image file names
     const bodyParts = [
-        { name: 'head', src: 'assets/head.png', position: { top: '32%', left: '77%' } },
-        { name: 'body', src: 'assets/body.png', position: { top: '51%', left: '77%' }, width: '5px' },
-        { name: 'left-arm', src: 'assets/hand-one.png', position: { top: '48%', left: '70%' } },
-        { name: 'right-arm', src: 'assets/hand-two.png', position: { top: '48%', left: '84%' } },
-        { name: 'left-leg', src: 'assets/leg-one.png', position: { top: '70%', left: '70%' } },
-        { name: 'right-leg', src: 'assets/leg-two.png', position: { top: '70%', left: '84%' } }
+        { name: 'head', src: 'assets/one.png', position: { top: '28%', left: '72.5%' } },
+        { name: 'body', src: 'assets/two.png', position: { top: '46%', left: '72.5%' }, width: '5px' },
+        { name: 'left-arm', src: 'assets/three.png', position: { top: '42%', left: '65%' } },
+        { name: 'right-arm', src: 'assets/four.png', position: { top: '42%', left: '80%' } },
+        { name: 'left-leg', src: 'assets/three.png', position: { top: '65%', left: '65%' } },
+        { name: 'right-leg', src: 'assets/four.png', position: { top: '65%', left: '80%' } }
     ];
 
     // loop through the bodyParts array and add the images to the gallows container
