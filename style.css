@@ -15,6 +15,8 @@ h1 {
     color: #E3DBDB;
     font-family: "Macondo", serif;
     font-size: 42px;
+    margin: 5px;
+    letter-spacing: 1rem;
 }
 
 .container {
@@ -22,37 +24,26 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
+    gap: 4em;
     width: 90%;
     height: auto;
     min-height: 600px;
     background-color: #FFFFFF;
     margin: 20px auto;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: #231b1d 0px 19px 38px, #251d1f 0px 15px 12px;
 }
 
 .gallows-container {
-    background: url('assets/gro.png') no-repeat center/contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     position: relative;
     width: 100%;
     height: 100%;
     max-width: 400px;
     max-height: 500px;
-}
-
-img {
-    display: block;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    width: 60px;
-    height: auto;
-    visibility: hidden;
-}
-
-.gallows-container img.show {
-    visibility: visible;
 }
 
 /* GAME CONTAINER */
@@ -67,16 +58,36 @@ img {
     font-weight: 400;
 }
 
+.word {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.word .letter{
+    font-family: "Macondo", serif;
+    color: #251d1f;
+    width: 34px;
+    font-size: 2.4rem;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
 p {
     font-size: 1.2rem;
-    margin: 5px;
+    margin: 10px;
 }
 
 .keyboard {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 button {
@@ -90,12 +101,19 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 1s;
+    transition: background-color 1s, box-shadow 1s;
     box-shadow: #9F9F92 0px 0px 0px 2px, #9F9F92 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
 button:hover {
     background-color: #9F9F92;
+    box-shadow: none;
+}
+
+button:disabled {
+    background-color: #9F9F92;
+    box-shadow: none;
+    cursor: default;
 }
 
 
