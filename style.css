@@ -46,8 +46,6 @@ h1 {
     max-height: 500px;
 }
 
-/* GAME CONTAINER */
-
 .game-container {
     font-family: "Antic Didone", serif;
     display: flex;
@@ -64,6 +62,7 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    padding: 0;
     list-style: none;
 }
 
@@ -81,6 +80,7 @@ h1 {
 p {
     font-size: 1.2rem;
     margin: 10px;
+    text-align: center;
 }
 
 .keyboard {
@@ -175,28 +175,21 @@ button:disabled {
     .container {
         width: 90%;
         gap: 1em;
-        /* width: 100%; */
-        /* flex-direction: column;
-        align-items: center;
-        height: auto; */
-    }
-
-    .gallows-container {
-        /* max-width: 80%;
-        max-height: 400px; */
+        margin: 15px auto;
     }
 
     .game-container {
-        width: 60%;
+        width: 90%;
     }
 
+    .word {
+        gap: 4px;
+    }
+    
     .word .letter {
-        width: 16px;
+        width: 18px;
         font-size: 1.8rem;
-    }
-
-    .keyboard {
-        /* justify-content: center; */
+        margin-bottom: 5px;
     }
 
     button {
@@ -207,6 +200,10 @@ button:disabled {
     .game-container p {
         font-size: 1rem;
     }
+
+    .reset-btn {
+        width: 40%;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -215,20 +212,30 @@ button:disabled {
     }
 
     .container {
-        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 5px;
+        width: 94%;
+        gap: 0.2em;
+        margin: 8px auto;
     }
 
     .gallows-container {
         max-width: 100%;
-        max-height: 350px;
+        height: 450px;
     }
 
-    .keyboard {
-        justify-content: flex-start;
+    p {
+        font-size: 1rem;
     }
 
     button {
         width: 45px;
         height: 45px;
+    }
+
+    .keyboard {
+        margin: 8px 0;
     }
 }

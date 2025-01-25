@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     title.textContent = "Hangman";
     gallowsContainer.style.backgroundImage = "url('assets/gallow.png')";
     guesses.innerHTML = "<b>Incorrect guesses:</b> 0 / 6";
-    resetBtn.innerText = "Try Again";
+    resetBtn.innerText = "Play Again";
 
     // create the keyboard buttons
     const buttons = [];

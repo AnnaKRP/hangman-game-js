@@ -43,4 +43,32 @@ const words = [
         word: "sahara",
         hint: "What is the name of the large desert located in northern Africa?"
     },
+    {
+        word: "library",
+        hint: "A place where books are stored and borrowed."
+    },
+    {
+        word: "guitar",
+        hint: "A stringed musical instrument."
+    },
+    {
+        word: "chocolate",
+        hint: "A sweet treat made from cocoa."
+    },
+    {
+        word: "rainbow",
+        hint: " A colorful arc seen after rain."
+    },
+    {
+        word: "helicopter",
+        hint: "A flying vehicle with rotating blades."
+    },
+    {
+        word: "volcano",
+        hint: "A mountain that erupts with lava."
+    },
+    {
+        word: "jellyfish",
+        hint: "A sea creature with a soft, gelatinous body."
+    }
 ];
